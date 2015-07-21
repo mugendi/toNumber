@@ -1,6 +1,6 @@
 {
   "name": "to-number",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Convert strings to their numeric representations",
   "main": "index.js",
   "scripts": {
