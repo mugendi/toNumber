@@ -56,14 +56,10 @@ module.exports=function textToNumber(s) {
 		// console.log(w,pluralize(w, 1))
 		var x = small[w] || null;
 
-		// console.log(x,w)
-
 		if (w.match(/^\s*[\d\.]+\s*$/)) {
 			g = g + parseFloat(w, 10);
 		} else if (x != null) {
 			g = g + x;
-		} else if (w == "hundred") {
-			g = g * 100;
 		} else {
 			x = magnitude[w];
 			
@@ -75,6 +71,8 @@ module.exports=function textToNumber(s) {
 			}
 		}
 	});
+
+	
 	
 	var num=(n || g)? n + g : NaN;
 
