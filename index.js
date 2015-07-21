@@ -1,3 +1,5 @@
+var pluralize = require('pluralize');
+
 var small = {
 		'zero': 0,
 		'one': 1,
@@ -49,6 +51,9 @@ module.exports=function textToNumber(s) {
 		g = null;
 
 	parts.forEach(function (w) {
+		w=pluralize(w, 1);
+		
+		// console.log(w,pluralize(w, 1))
 		var x = small[w] || null;
 
 		// console.log(x,w)

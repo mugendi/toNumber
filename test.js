@@ -12,5 +12,5 @@ strs.forEach(function(str){
 
 	var parsed=toN(str)
 
-	console.log(parsed);	
+	console.log(str+' >> '+parsed);	
 })
