@@ -76,5 +76,8 @@ module.exports=function textToNumber(s) {
 		}
 	});
 	
-	return n + g;
+	var num=(n || g)? n + g : NaN;
+
+
+	return num;
 }
